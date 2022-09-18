@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive NKS Blog</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="header adjust">
+        <div class="left">
+            <a class="symbol" href="index.html">iBlog</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <form action="search.html">
+                <input type="text" placeholder="Search the blog" class="search">
+                <input type="submit" value="Search" class="btn">
+            </form>
+        </div>
+    </div>
+    <hr class="adjust" style="margin-top: 15px">
+    <div class="articles adjust">
+        <h2>Searched Results</h2>
+        <div class="content">
+            <div class="article-content eas">
+                <div class="article-content-div">
+                    <img src="images/cmp.png" alt="">
+                    <div class="read-time">
+                        <a href="blog.html">What are the conditional statements and loops in computer programming</a>
+                        <p>Author name</p>
+                        <p>28 March | 40 min read</p>
+                    </div>
+                </div>
+                <div class="article-content-div">
+                    <img src="images/cmp.png" alt="">
+                    <div class="read-time">
+                        <a href="blog.html">What are arrays and strings in computer programming</a>
+                        <p>Author name</p>
+                        <p>5 April | 90 min read</p>
+                    </div>
+                </div>
+                <div class="article-content-div">
+                    <img src="images/cmp.png" alt="">
+                    <div class="read-time">
+                        <a href="blog.html">What are dynamic Arrays and vectors in computer programming</a>
+                        <p>Author name</p>
+                        <p>10 April | 120 min read</p>
+                    </div>
+                </div>
+            </div>
+            <div class="article-content med">
+                <div class="article-content-div">
+                    <img src="images/cmp.png" alt="">
+                    <div class="read-time">
+                        <a href="blog.html">What are Linked List in computer Programming.</a>
+                        <p>Author name</p>
+                        <p>25 Feb | 50 min read</p>
+                    </div>
+                </div>
+                <div class="article-content-div">
+                    <img src="images/cmp.png" alt="">
+                    <div class="read-time">
+                        <a href="blog.html">What are Stacks and Queues in computer Programming.</a>
+                        <p>Author name</p>
+                        <p>12 March | 45 min read</p>
+                    </div>
+                </div>
+                <div class="article-content-div">
+                    <img src="images/cmp.png" alt="">
+                    <div class="read-time">
+                        <a href="blog.html">What are Trees, Binary Trees and BST in computer Programming.</a>
+                        <p>Author name</p>
+                        <p>28 March | 40 min read</p>
+                    </div>
+                </div>
+            </div>
+            <div class="year">
+                <h3>Topic Level</h3>
+                <input type="radio" name="name1" onclick="disp1()" class="easy"><span class="basic">Basic</span><br class="brTag">
+                <input type="radio" name="name1" onclick="disp2()" class="medium"><span>Advanced</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>@2018 Nitin Kumar Shukla @ The Learner</p>
+    </div>
+</body>
+<script src="javascript/index.js"></script>
+
+</html>
