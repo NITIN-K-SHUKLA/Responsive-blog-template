@@ -100,6 +100,9 @@ h3 {
   width: 50%;
 }
 
+.personal-info img{
+  width: 45%;
+}
 .computer {
   width: 25%;
   float: left;

@@ -1,0 +1,310 @@
+body {
+    background-color: #EFFFFD;
+    /* background-color: antiquewhite; */
+    margin: 0;
+    padding:0;
+}
+
+/* For header section in notes making website */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: aqua; */
+    padding: 20px 0;
+    line-height: 2;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.left {
+    display: flex;
+}
+
+.header ul a {
+    text-decoration: none;
+    padding: 10px;
+    font-size: 22px;
+}
+
+.symbol {
+    margin-right: 20px;
+    font-size: 35px;
+    text-decoration: none;
+}
+
+.left a {
+    color: black;
+}
+
+.left a:hover {
+    color: green;
+    text-shadow: 2px 2px 5px;
+}
+
+.adjust {
+    width: 80vw;
+    margin: auto;
+}
+
+.adjust2{
+    width: 60vw;
+    margin: auto;
+    font-size: 20px;
+    /* font-family: var(--font1); */
+}
+.search {
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 8px;
+    margin-right: 10px;
+}
+
+/* End the css of header section in notes making website */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+h3 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.addNote {
+    
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.add {
+    margin-right: 70px;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 10px;
+    background-color: rgb(248, 102, 91);
+    border: 1px solid rgb(248, 102, 91);
+    /* color: rgb(235, 213, 213); */
+    color: white;
+    border-radius: 20px;
+    /* transition: background-color 1s, font-weight 1s, border-color 1s; */
+}
+
+.add:hover {
+    background-color: rgb(95, 182, 182);
+    border-color:rgb(95, 182, 182);
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.visible {
+    display: none;
+    color: red;
+}
+
+.note {
+    background-color: white;
+    box-shadow: 2px 2px 20px #58afeb;
+    width: 21vw;
+    height: 15vw;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.change {
+    margin-right: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.searchArea{
+    border: black 1px solid;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 10px;   
+}
+
+.edit {
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: lightgreen;
+    border: 1px solid lightgreen;
+    padding: 10px;
+    color: green;
+}
+
+.del{
+    border-radius: 50%;
+    background-color: rgb(255 87 137);
+    border: 1px solid rgb(255 87 137);
+    padding: 10px;
+    color: white;
+}
+
+.del:hover{
+    background-color: red;
+    border: 1px solid red;
+    color: white;
+    transition: background-color 1.2s, border 1.2s, color 0.5s;
+}
+
+.edit:hover{
+    background-color: rgb(63, 229, 235);
+    color:white;
+    transition: background-color 0.5s, color 0.5s;
+}
+textarea {
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 66%;
+}
+
+/* CSS */
+.button-85 {
+  padding: 0.8em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-85:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.button-85:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #d55472e0;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+/* CSS */
+.button-62 {
+  background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+  border: 0;
+  border-radius: 12px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2.5;
+  outline: transparent;
+  padding: 0 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+}
+
+.button-62:not([disabled]):focus {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+.button-62:not([disabled]):hover {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+/* CSS */
+.button-1 {
+  background-color: #EA4C89;
+  border-radius: 45%;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-1:hover,
+.button-1:focus {
+  background-color: #F082AC;
+}
+
